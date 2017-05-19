@@ -211,7 +211,7 @@ namespace FarseerPhysics.Controllers
         /// support in inheriting classes</returns>
         protected float GetDecayMultiplier(Body body)
         {
-            //TODO: Consider ForceType in distance calculation!
+            //FARSEER_TODO: Consider ForceType in distance calculation!
             float distance = (body.Position - Position).Length();
             switch (DecayMode)
             {

@@ -36,7 +36,7 @@ namespace FarseerPhysics.Factories
             //Use PathManager to create all the chainlinks based on the chainlink created before.
             List<Body> chainLinks = PathManager.EvenlyDistributeShapesAlongPath(world, path, shape, BodyType.Dynamic, numberOfLinks);
 
-            //TODO
+            //FARSEER_TODO
             //if (fixStart)
             //{
             //    //Fix the first chainlink to the world

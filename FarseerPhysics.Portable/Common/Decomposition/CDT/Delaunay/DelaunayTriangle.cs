@@ -77,7 +77,7 @@ namespace FarseerPhysics.Common.Decomposition.CDT.Delaunay
             return i;
         }
 
-        //TODO: Port note - different implementation
+        //FARSEER_TODO: Port note - different implementation
         public int IndexCW(TriangulationPoint p)
         {
             int index = IndexOf(p);
@@ -92,7 +92,7 @@ namespace FarseerPhysics.Common.Decomposition.CDT.Delaunay
             }
         }
 
-        //TODO: Port note - different implementation
+        //FARSEER_TODO: Port note - different implementation
         public int IndexCCW(TriangulationPoint p)
         {
             int index = IndexOf(p);

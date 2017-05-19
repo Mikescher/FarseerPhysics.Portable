@@ -639,7 +639,7 @@ namespace FarseerPhysics.Common
         /// <param name="angle">Angle in radians</param>
         public Rot(float angle)
         {
-            // TODO_ERIN optimize
+            // FARSEER_TODO_ERIN optimize
             s = (float)Math.Sin(angle);
             c = (float)Math.Cos(angle);
         }
@@ -658,7 +658,7 @@ namespace FarseerPhysics.Common
             }
             else
             {
-                // TODO_ERIN optimize
+                // FARSEER_TODO_ERIN optimize
                 s = (float)Math.Sin(angle);
                 c = (float)Math.Cos(angle);
             }

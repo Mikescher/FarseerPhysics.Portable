@@ -72,7 +72,7 @@ namespace FarseerPhysics.Collision.Shapes
             set
             {
                 _position = value;
-                ComputeProperties(); //TODO: Optimize here
+                ComputeProperties(); //FARSEER_TODO: Optimize here
             }
         }
 
@@ -117,7 +117,7 @@ namespace FarseerPhysics.Collision.Shapes
                 a /= rr;
                 output.Fraction = a;
 
-                //TODO: Check results here
+                //FARSEER_TODO: Check results here
                 output.Normal = s + a * r;
                 output.Normal.Normalize();
                 return true;

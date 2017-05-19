@@ -118,7 +118,7 @@ namespace FarseerPhysics.Dynamics.Joints
 
             float coordinateA, coordinateB;
 
-            // TODO_ERIN there might be some problem with the joint edges in b2Joint.
+            // FARSEER_TODO_ERIN there might be some problem with the joint edges in b2Joint.
 
             _bodyC = JointA.BodyA;
             _bodyA = JointA.BodyB;
@@ -471,7 +471,7 @@ namespace FarseerPhysics.Dynamics.Joints
             data.positions[_indexD].c = cD;
             data.positions[_indexD].a = aD;
 
-            // TODO_ERIN not implemented
+            // FARSEER_TODO_ERIN not implemented
             return linearError < Settings.LinearSlop;
         }
     }

@@ -1473,7 +1473,7 @@ namespace FarseerPhysics.Dynamics
 
             foreach (Joint joint in JointList)
             {
-                //joint.ShiftOrigin(newOrigin); //TODO: uncomment
+                //joint.ShiftOrigin(newOrigin); //FARSEER_TODO: uncomment
             }
 
             ContactManager.BroadPhase.ShiftOrigin(newOrigin);

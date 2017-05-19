@@ -297,7 +297,7 @@ namespace FarseerPhysics.Dynamics.Contacts
                     else
                     {
                         // The constraints are redundant, just use one.
-                        // TODO_ERIN use deepest?
+                        // FARSEER_TODO_ERIN use deepest?
                         vc.pointCount = 1;
                     }
                 }
