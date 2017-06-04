@@ -47,14 +47,18 @@ namespace FarseerPhysics
         /// NOTE: If you are using a debug view that shows performance counters,
         /// you might want to enable this.
         /// </summary>
+#if DEBUG
         public const bool EnableDiagnostics = true;
+#else
+        public const bool EnableDiagnostics = false;
+#endif
 
-        /// <summary>
-        /// Set this to true to skip sanity checks in the engine. This will speed up the
-        /// tools by removing the overhead of the checks, but you will need to handle checks
-        /// yourself where it is needed.
-        /// </summary>
-        public const bool SkipSanityChecks = false;
+		/// <summary>
+		/// Set this to true to skip sanity checks in the engine. This will speed up the
+		/// tools by removing the overhead of the checks, but you will need to handle checks
+		/// yourself where it is needed.
+		/// </summary>
+		public const bool SkipSanityChecks = false;
 
         /// <summary>
         /// The number of velocity iterations used in the solver.
@@ -69,7 +73,7 @@ namespace FarseerPhysics
         /// <summary>
         /// Enable/Disable Continuous Collision Detection (CCD)
         /// </summary>
-        public static bool ContinuousPhysics = true;
+        public static bool ContinuousPhysics = false;
 
         /// <summary>
         /// If true, it will run a GiftWrap convex hull on all polygon inputs.
